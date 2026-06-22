@@ -22,7 +22,7 @@ docker push rahul10nagarro/nagp-api:1.0.0
 ### Kubernetes deployment (Ingress + HPA)
 #### Prereqs
 - A Kubernetes cluster (kind/minikube/AKS/EKS/GKE)
-- NGINX Ingress Controller installed (Ingress class `nginx`)
+- An Ingress controller (GKE default ingress works with the provided `k8s/ingress.yaml`)
 - Metrics Server installed (required for HPA)
 
 #### Apply manifests
@@ -60,16 +60,10 @@ kubectl apply -f k8s/api-hpa.yaml
 ```
 
 ### API URL (external)
-This Ingress uses host `nagp.local`.
+- **Records endpoint**: `http://<INGRESS_EXTERNAL_IP>/records`
 
-- **Records endpoint**: `http://nagp.local/records`
-
-If you’re on minikube, you can also test without editing `/etc/hosts` by using:
-
-```bash
-minikube tunnel
-curl -H "Host: nagp.local" http://127.0.0.1/records
-```
+Example from a successful GKE run:
+- `http://34.128.181.83/records`
 
 ### Demo checklist for screen recording
 - Show objects: `kubectl -n nagp-2026 get all,cm,secret,pvc,ingress,hpa`
