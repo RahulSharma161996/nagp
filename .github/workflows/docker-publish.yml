@@ -31,4 +31,4 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            rahul10nagarro/nagp-api:1.0.0
+            rahul10nagarro/nagp-api:1.0.1

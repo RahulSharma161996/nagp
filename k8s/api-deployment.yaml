@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: rahul10nagarro/nagp-api:1.0.0
+          image: rahul10nagarro/nagp-api:1.0.1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000

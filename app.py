@@ -59,6 +59,12 @@ def _get_pool() -> ConnectionPool:
     return _pool
 
 
+@app.get("/")
+def root():
+    # GKE default Ingress health checks commonly use "/" by default.
+    return {"status": "ok"}
+
+
 @app.get("/healthz")
 def healthz():
     try:
