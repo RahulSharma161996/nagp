@@ -2,12 +2,12 @@
 
 ## Deliverables
 
-| Item                      | Link                                             |
-| ------------------------- | ------------------------------------------------ |
-| Code repository           | https://github.com/RahulSharma161996/nagp.git    |
-| Docker image (Docker Hub) | https://hub.docker.com/r/rahul10nagarro/nagp-api |
-| Service API URL           | http://34.128.181.83/records                     |
-| Screen recording          | <PASTE YOUR VIDEO LINK>                          |
+| Item                      | Link                                                                               |
+| ------------------------- | ---------------------------------------------------------------------------------- |
+| Code repository           | https://github.com/RahulSharma161996/nagp.git                                      |
+| Docker image (Docker Hub) | https://hub.docker.com/r/rahul10nagarro/nagp-api                                   |
+| Service API URL           | http://34.128.181.83/records                                                       |
+| Screen recording          | https://drive.google.com/file/d/1bEisuN1H0p75NjPmvS3nDLHNcgdFe2US/view?usp=sharing |
 
 **Video demonstrates:** all objects running, `/records` API call, API pod self-healing, DB pod recovery with data persistence, rolling update, HPA, and FinOps considerations.
 
